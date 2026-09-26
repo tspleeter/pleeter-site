@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pleeter LLC — E-commerce, licensing, apps and products</title>
+<meta name="description" content="Pleeter LLC helps growing businesses build revenue through e-commerce, licensing, mobile and web apps, and new products. Based in Hawthorne, NJ.">
+<meta property="og:title" content="Pleeter LLC">
+<meta property="og:description" content="E-commerce, licensing, apps and products for growing businesses.">
+<meta property="og:url" content="https://pleeter.com/">
+<meta name="theme-color" content="#0075C1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%2313233B'/><text x='32' y='45' font-family='Arial' font-weight='900' font-size='38' fill='%23fff' text-anchor='middle'>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#13233B; --blue:#0075C1; --paper:#F7F9FB; --line:#D5DEE7; --muted:#51627A; --white:#FFFFFF;
+  --orange:#E0652A; --sand:#C9B48A; --green:#5B7F4A; --gray:#6E7A80;
+  --wrap:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;font-stretch:100%;color:var(--ink);background:var(--paper);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:2px}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+
+/* Nav */
+header.top{position:sticky;top:0;z-index:10;background:rgba(247,249,251,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:900;font-stretch:125%;font-size:20px;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.logo span{color:var(--blue)}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:16px;margin-left:28px}
+nav a:hover{color:var(--blue)}
+@media (max-width:640px){nav a:not(.nav-cta){display:none}}
+.nav-cta{background:var(--ink);color:#fff!important;padding:8px 16px;border-radius:6px}
+
+/* Hero */
+.hero{padding:96px 0 72px}
+.hero h1{font-weight:900;font-stretch:125%;font-size:clamp(44px,8.4vw,112px);line-height:.92;letter-spacing:-.03em;max-width:12ch}
+.hero p.lede{font-size:clamp(19px,2.2vw,23px);color:var(--muted);max-width:40ch;margin-top:32px;line-height:1.5}
+.hero .actions{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;font-weight:700;text-decoration:none;padding:14px 24px;border-radius:6px;font-size:17px}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.primary:hover{background:#005F9E}
+.btn.ghost{color:var(--ink);border:2px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.proof{margin-top:72px;border-top:2px solid var(--ink);display:grid;grid-template-columns:repeat(3,1fr)}
+.proof div{padding:20px 20px 0 0;font-size:16px;color:var(--muted);line-height:1.45}
+.proof strong{display:block;color:var(--ink);font-weight:800;font-stretch:115%;font-size:30px;line-height:1.1;margin-bottom:6px}
+@media (max-width:720px){.proof{grid-template-columns:1fr}.proof div{padding:18px 0;border-bottom:1px solid var(--line)}}
+
+section{padding:88px 0}
+h2{font-weight:900;font-stretch:115%;font-size:clamp(32px,4.6vw,52px);line-height:1;letter-spacing:-.02em;margin-bottom:16px}
+.sub{color:var(--muted);max-width:52ch;margin-bottom:48px}
+
+/* Featured: BuckThatDuck */
+.feature{background:var(--ink);color:#fff;padding:0;overflow:hidden}
+.feature .inner{display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;min-height:520px}
+.feature .text{padding:80px 56px 72px 24px;max-width:560px;margin-left:auto}
+.feature .tag{display:inline-block;background:var(--orange);color:#fff;font-weight:700;font-size:14px;padding:4px 10px;border-radius:4px;margin-bottom:24px}
+.feature h2{color:#fff;font-size:clamp(30px,3.6vw,44px);overflow-wrap:anywhere}
+.feature p{color:#C7D2DF;margin:18px 0}
+.feature a.btn.primary{background:var(--orange);margin-top:12px}
+.feature a.btn.primary:hover{background:#C4531D}
+.feature .art{background:#EAF2F8;position:relative;display:flex;align-items:center;justify-content:center}
+.feature .art img{width:100%;max-width:560px;height:auto;object-fit:contain;padding:48px 32px 64px}
+.swatches{position:absolute;left:0;right:0;bottom:0;display:flex;height:14px}
+.swatches i{flex:1}
+@media (max-width:860px){.feature .inner{grid-template-columns:1fr}.feature .text{padding:64px 24px;margin:0}.feature .art{min-height:320px}}
+
+/* Services */
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:0 64px}
+.svc{padding:28px 0;border-top:1px solid var(--line)}
+.svc h3{font-weight:800;font-stretch:110%;font-size:22px;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:17px}
+@media (max-width:760px){.services{grid-template-columns:1fr}}
+
+/* Apps */
+.apps{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.app{display:grid;grid-template-columns:220px 1fr auto;gap:24px;align-items:baseline;padding:22px 0;border-top:1px solid var(--line)}
+.app:last-child{border-bottom:1px solid var(--line)}
+.app h3{font-weight:800;font-size:20px}
+.app p{color:var(--muted);font-size:17px}
+.app a{font-weight:700;font-size:16px;white-space:nowrap;text-decoration:none}
+.app a:hover{text-decoration:underline}
+@media (max-width:760px){.app{grid-template-columns:1fr;gap:4px}}
+
+/* Timeline */
+.timeline{list-style:none;border-left:2px solid var(--ink);margin-left:6px}
+.timeline li{position:relative;padding:0 0 36px 32px}
+.timeline li::before{content:"";position:absolute;left:-8px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:2px solid var(--ink)}
+.timeline li:first-child::before{background:var(--blue);border-color:var(--blue)}
+.timeline .yrs{font-weight:700;color:var(--blue);font-size:15px}
+.timeline h3{font-weight:800;font-size:21px;line-height:1.3}
+.timeline .org{color:var(--muted);font-size:16px;margin-bottom:6px}
+.timeline p.win{font-size:17px;max-width:62ch}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.about-grid p{margin-bottom:18px;max-width:58ch}
+.facts{list-style:none}
+.facts li{padding:14px 0;border-top:1px solid var(--line);font-size:17px}
+.facts li b{display:block;font-weight:700}
+.facts li span{color:var(--muted)}
+@media (max-width:760px){.about-grid{grid-template-columns:1fr;gap:32px}}
+
+/* Contact */
+.contact{background:var(--blue);color:#fff}
+.contact h2{color:#fff;max-width:14ch}
+.contact p{color:#DCEBF6;max-width:48ch;margin:16px 0 36px}
+.contact .btn.primary{background:#fff;color:var(--ink)}
+.contact .btn.primary:hover{background:var(--ink);color:#fff}
+.contact .btn.ghost{border-color:#fff;color:#fff}
+.contact .btn.ghost:hover{background:#fff;color:var(--blue)}
+footer{padding:28px 0;font-size:15px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">Pleeter<span>.</span></a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a class="nav-cta" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <h1>Ideas in. Revenue out.</h1>
+      <p class="lede">Pleeter LLC helps growing businesses launch online stores, licensing programs, apps and physical products, and then makes them pay.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Start a project</a>
+        <a class="btn ghost" href="#work">See the work</a>
+      </div>
+      <div class="proof">
+        <div><strong>$9M+</strong>in licensing agreements negotiated and closed</div>
+        <div><strong>$3M+</strong>in yearly sales from an e-commerce platform I ran</div>
+        <div><strong>20,000+</strong>users across mobile apps I designed and coded</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="work" aria-labelledby="btd">
+    <div class="inner">
+      <div class="text">
+        <span class="tag">Launching October 2026</span>
+        <h2 id="btd">BuckThatDuck.com</h2>
+        <p>A direct-to-consumer store for Bronco Buck collectible figurines. Customers design their own in an interactive builder, choosing body color, mane, stand and accessories, then save, share or order it.</p>
+        <p>I built the brand, the product line, the website and the commercial, and I produce every piece in-house on multi-color 3D printers.</p>
+        <a class="btn primary" href="https://www.buckthatduck.com/">Visit BuckThatDuck.com</a>
+      </div>
+      <div class="art">
+        <img src="buckthatduck.png" alt="Bronco Buck figurine biting a rubber duck">
+        <div class="swatches" aria-hidden="true">
+          <i style="background:#1F4E8C"></i><i style="background:#E0652A"></i><i style="background:#C9B48A"></i><i style="background:#5B7F4A"></i><i style="background:#9E1B22"></i><i style="background:#6E7A80"></i><i style="background:#F2F2EE"></i><i style="background:#1B1B1B"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What I do</h2>
+      <p class="sub">One person who handles the strategy, the deals and the build, so nothing gets lost in hand-offs.</p>
+      <div class="services">
+        <div class="svc"><h3>E-commerce and growth</h3><p>Online stores, subscription platforms, SEO and affiliate programs that bring in traffic and turn it into sales.</p></div>
+        <div class="svc"><h3>Licensing and syndication</h3><p>New revenue from content you already own. I find the partners, negotiate the agreements and manage the P&amp;L.</p></div>
+        <div class="svc"><h3>Mobile and web apps</h3><p>iPhone and iPad apps built in Xcode, plus modern web builds with Next.js and React, from first sketch to App Store.</p></div>
+        <div class="svc"><h3>Product development</h3><p>Physical products designed, prototyped and produced with 3D printing, then sold online.</p></div>
+        <div class="svc"><h3>Small-business technology</h3><p>QR-coded inventory, automated Google listings, iPad fleets and websites that keep day-to-day operations running.</p></div>
+        <div class="svc"><h3>Data and reporting</h3><p>SQL Server databases, data models and reports that show you what is actually selling.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="apps" aria-labelledby="apps-h">
+    <div class="wrap">
+      <h2 id="apps-h">Apps I've built</h2>
+      <p class="sub">Conceived, coded and launched under Pleeter LLC.</p>
+      <div class="app"><h3>AphasiaTunes</h3><p>A music game for speech therapy. Players name the artist behind #1 hit song clips from 1950 to 2019.</p><a href="https://apps.apple.com/us/app/aphasiatunes/id1170675951">App Store</a></div>
+      <div class="app"><h3>apPhasia</h3><p>Raises awareness of aphasia. Take a selfie, add a message and share it on social media.</p><a href="https://apps.apple.com/us/app/apphasia/id1453750962">App Store</a></div>
+      <div class="app"><h3>Coin Flipper</h3><p>Flip coins, roll dice and draw cards with a true random number generator. 12,000+ users.</p><a href="https://itunes.apple.com/us/app/coin-flipper-app/id590589294">App Store</a></div>
+      <div class="app"><h3>green iDirectory</h3><p>Secure, private networking for associations and small communities.</p><a href="https://itunes.apple.com/us/app/green-idirectory/id590553798">App Store</a></div>
+      <div class="app"><h3>Nutrition101</h3><p>Log daily food and activity for review by a nutritionist.</p><a href="https://itunes.apple.com/us/app/nutrition-101-app/id1435345585">App Store</a></div>
+      <div class="app"><h3>justbreathe</h3><p>Gentle gong alerts through the day that remind you to stop and breathe deeply.</p><a href="http://itunes.apple.com/app/justbreathe/id512769722?mt=8">App Store</a></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Track record</h2>
+      <p class="sub">Twenty-plus years building new revenue channels, from startups to a global publisher.</p>
+      <ol class="timeline" reversed>
+        <li><div class="yrs">2010 – present</div><h3>Founder</h3><div class="org">Pleeter LLC, Hawthorne, NJ</div><p class="win">Consulting, app development and direct-to-consumer products for dealerships, publishers and nonprofits.</p></li>
+        <li><div class="yrs">2005 – 2010</div><h3>Director, Licensing &amp; Syndication</h3><div class="org">Wolters Kluwer / Aspen Publishers</div><p class="win">Built a multimillion-dollar electronic licensing channel and closed over $9M in agreements.</p></li>
+        <li><div class="yrs">2001 – 2005</div><h3>Director, E-Commerce</h3><div class="org">Aspen Publishers</div><p class="win">Ran AspenPublishers.com at $3M+ a year and grew online revenue 65%.</p></li>
+        <li><div class="yrs">2000 – 2001</div><h3>Director, E-Commerce</h3><div class="org">Alfy.com</div><p class="win">Led e-commerce for a children's membership club with 150,000+ subscribers.</p></li>
+        <li><div class="yrs">1996 – 2000</div><h3>VP of Operations</h3><div class="org">Amplaco Group</div><p class="win">Ran five divisions with $7M in sales and integrated two acquisitions, cutting overhead up to 85%.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="apps" aria-labelledby="about-h">
+    <div class="wrap about-grid">
+      <div>
+        <h2 id="about-h">About Todd</h2>
+        <p>I started as an engineer, moved into operations, and spent most of my career building online revenue for publishers and startups. In 2010 I started Pleeter LLC to do that work directly for the businesses that need it.</p>
+        <p>I like projects where the business side and the technical side have to meet: a licensing deal that needs a delivery platform, a store that needs a better product, or an idea that needs someone to actually build it.</p>
+      </div>
+      <ul class="facts">
+        <li><b>B.S., Aerospace Engineering</b><span>University of Colorado Boulder</span></li>
+        <li><b>iPhone/iPad Programming Certificate</b><span>xcelMe</span></li>
+        <li><b>Microsoft Certified Solutions Associate: SQL Server</b><span>NetCom Learning</span></li>
+        <li><b>Volunteer since 2014</b><span>Adler Aphasia Center, Maywood, NJ</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Have a project in mind?</h2>
+      <p>Tell me what you're trying to launch or grow. I'll reply within one business day.</p>
+      <div class="actions" style="display:flex;gap:16px;flex-wrap:wrap">
+        <a class="btn primary" href="mailto:tspleeter@gmail.com?subject=Project%20inquiry">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/todd-pleeter">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Pleeter LLC, Hawthorne, NJ</span>
+    <span><a href="https://www.buckthatduck.com/">BuckThatDuck.com</a></span>
+  </div>
+</footer>
+</body>
+</html>
